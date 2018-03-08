@@ -1,14 +1,14 @@
 
 /**
 * Write a TemplateEngine class. Its constructor should accept a 
-* template string, and it should have a "format" method, which 
+* template string, and it should have a "format" method , which 
 * accepts a data object. The format method should return the 
 * formatted template string.
 */
 
 class TemplateEngine {
     //Your code here
-    constructor(temp) {
+    constructor(temp) { 
         this.temp = temp;
     }
 
@@ -16,7 +16,7 @@ class TemplateEngine {
         let pass = args[0];
         //   let {name, age} =  args[0];
         //   name
-        //   age
+        //   age 
 
         let result = this.temp.replace(/\<\%(.*?)\%\>/g, function (i, match) {
             return pass[match];
